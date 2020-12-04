@@ -5,7 +5,7 @@ interface Num {
         return -1;
     };
 }
-class M_Prostokat implements Num {
+class M_Prostokat extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         M_Prostokatow[] watki = new M_Prostokatow[dividers];
         for (int i = 0; i < dividers; i++) {
@@ -26,7 +26,7 @@ class M_Prostokat implements Num {
     }
 }
 
-class M_Sipsona implements Num {
+class M_Sipsona extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         ArrayList<M_Simpsona> watki = new ArrayList<M_Simpsona>();
 
@@ -61,7 +61,7 @@ class M_Sipsona implements Num {
         return wynik;
     }
 }
-class M_Trapez implements Num {
+class M_Trapez extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         M_Trapezow[] watki = new M_Trapezow[dividers + 1];
         for (int i = 0; i < watki.length; i++) {
