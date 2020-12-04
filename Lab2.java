@@ -1,10 +1,13 @@
 import java.util.function.Function;
+
+//NUM.java
 interface Num {
     public static double oblicz(double startt, double endd, int n, Function<Double, Double> f)
     {
         return -1;
     };
 }
+//M_Prostokat file
 class M_Prostokat extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         M_Prostokatow[] watki = new M_Prostokatow[dividers];
@@ -25,7 +28,7 @@ class M_Prostokat extends Num {
         return wynik;
     }
 }
-
+//M_Simpsona file
 class M_Sipsona extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         ArrayList<M_Simpsona> watki = new ArrayList<M_Simpsona>();
@@ -61,6 +64,7 @@ class M_Sipsona extends Num {
         return wynik;
     }
 }
+//M_Trapez file
 class M_Trapez extends Num {
     public static double oblicz(double startt, double endd, int dividers, Function<Double, Double> f) {
         M_Trapezow[] watki = new M_Trapezow[dividers + 1];
@@ -84,7 +88,7 @@ class M_Trapez extends Num {
     }
 }
 
-
+//Zad1 file
 public class Zad1 {
     public static void main(String[] args)
     {
