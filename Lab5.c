@@ -36,8 +36,12 @@ float oblicz(){
 int liczba;
 	printf("Podaj liczbe procesów?\n");
     scanf("%d", &liczba);
-    for(int i=0; i<liczba; i++){
+    for(int i=0; i<liczba; i++)
+    {
+            if(fork()==0)
+        {
             srand(time(NULL) ^(getpid()<<14));
+
             float xp=rand()%30+1,xk=rand()%34+2;
             int n = 100 + rand()%5000;
             float wynik = metodaTrapezow(n,xp,xk);
@@ -47,10 +51,10 @@ int liczba;
             printf("n=: %i ",n);
             printf("PI =  %f \n", pi);
             exit(0);
-
+        }
     }
 }
-
-int main(){
+int main()
+{
     oblicz();
 }
