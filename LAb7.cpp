@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include "mpi.h"
 
-#define TAG 545563
+#define TAG 544463
 
 using namespace std;
 void dom_aukcyjny(int ilosc_kupcow)
