@@ -1,0 +1,24 @@
+Game of life:
+Gra w życie – jeden z pierwszych i najbardziej znanych przykładów automatu komórkowego,
+wymyślony w roku 1970 przez brytyjskiego matematyka Johna Conwaya.
+Gra została spopularyzowana przez Martina Gardnera na łamach Scientific American. 
+Od momentu publikacji zawsze wzbudzała duże zainteresowanie z powodu zaskakującego sposobu, w jaki
+struktury potrafią ewoluować. To właśnie jej pojawienie się wzbudziło zainteresowanie automatami 
+komórkowymi wśród studentów, którzy traktowali ją jako rozrywkę oraz fizyków, którzy zwrócili uwagę 
+na możliwości automatów w zakresie symulatorów fizycznych. Dzisiaj matematyków, ekonomistów i naukowców
+z innych dziedzin interesuje sposób, w jaki przy zastosowaniu tylko kilku prostych reguł powstają skomplikowane struktury.
+
+Zasady Johna Conwaya:
+Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa w następnej jednostce czasu.
+Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; przy innej liczbie sąsiadów umiera.
+
+Zasada działania programu:
+Cała gra opiera się o planszę o zadanych rozmiarach,
+gra może toczyc się w nieskończoność lub tak długo jak chce tego użytkownik.
+Każdy krok polega na utworzeniu poglądu nowej tablicy sprawdzając sąsiednie 
+komórki, ważnym zauważenia jest że w przypadku planszy 16x16 mamy 256 komórek
+więc sprawdzamy te o 1 wieksze i mniejsze oraz te te o indexach +/- 16 i ich sąsiadów.
+Na podstawie poglądu na koniec obecnego poglądu zmieniamy tablicę. Wartym zauważenia 
+jest iż istnieją przykłady gdy gra się zapętli, jeden z takich przypadków jest 
+pokazany w programie i nazwano takie ustawienie komórek Glider'em, istnieją równierz 
+schematy niemienne np kwadrat składający się z 4 komórek.
