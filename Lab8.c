@@ -3,6 +3,7 @@
 #include "mpi.h"
 #include <assert.h>
 #include <string.h>
+
 int mod(int a, int b)
 {
     int r = a % b;
