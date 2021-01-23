@@ -1,0 +1,8 @@
+TensorFlow jest darmowym i open-source biblioteką oprogramowania dla uczenia maszynowego .
+Może być stosowany do wielu różnych zadań, ale kładzie szczególny nacisk na szkolenia i wnioskowania o głębokich sieciach neuronowych . 
+Tensorflow to symboliczna biblioteka matematyczna oparta na przepływie danych i programowaniu różniczkowalnym . 
+Jest używany zarówno do badań, jak i do produkcji w Google .
+TensorFlow został opracowany przez zespół Google Brain do wewnętrznego użytku Google . 
+Został wydany na licencji Apache 2.0 w 2015 roku.
+Jego ciekawym zastosowaniem jest detekcja obiektów ppolegające w dużej mierze na porównaniu obiektu badanego oraz
+porównaniu go do obiektów w bazie danych na podstawie których możemy w procętowych wartościach opisać prawdopodobieństwo iz jest to ten obiekt.
